@@ -807,7 +807,7 @@ export default function App() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <span className="text-xs font-mono text-goldSable uppercase tracking-wider mb-2 block">// PILOTE OPÉRATIONNEL HUMANITAIRE</span>
-                  <h3 className="text-3xl font-extrabold text-white mb-4">MSF-Ops : Outils de suivi d'activités & ressources</h3>
+                  <h3 className="text-3xl font-extrabold text-white mb-4">MSF-Ops : Outils de suivi d'activités et ressources</h3>
                   <p className="text-alabaster/70 font-light mb-6 leading-relaxed">
                     Une application complexe d'organisation et de reporting d'activités médicales sur le terrain. Conçue pour simplifier la vie des coordinateurs de projets, elle centralise les rapports opérationnels d'urgence et valide le bon dimensionnement logistique.
                   </p>
@@ -873,10 +873,10 @@ export default function App() {
             ) : (
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <span className="text-xs font-mono text-goldSable uppercase tracking-wider mb-2 block">// SYSTEME DE GESTION COMMUNAUTAIRE</span>
-                  <h3 className="text-3xl font-extrabold text-white mb-4">AMTF Connect : Adhésions & Workflow</h3>
+                  <span className="text-xs font-mono text-goldSable uppercase tracking-wider mb-2 block">// PORTAIL DE GESTION ASSOCIATIF</span>
+                  <h3 className="text-3xl font-extrabold text-white mb-4">AMTF Connect : Solidarité et Workflow</h3>
                   <p className="text-alabaster/70 font-light mb-6 leading-relaxed">
-                    Une plateforme de gestion d'adhésions de masse et de pilotage d'activités internes développée pour l'Association des Médecins du Tiers Monde (AMTF). Elle intègre la validation automatisée des justificatifs professionnels et simplifie la communication inter-membres.
+                    Une plateforme de gestion d'adhésions de masse et de collecte de dons développée pour l'Association du Massif du Tangué en France (AMTF). Elle intègre l'automatisation des cotisations, le traitement sécurisé des transactions via Stripe, la génération de cartes de membre virtuelles par QR Code et un suivi d'impact transparent des chantiers solidaires en Guinée.
                   </p>
                   
                   <div className="grid grid-cols-2 gap-4 mb-6">
@@ -890,34 +890,59 @@ export default function App() {
                     </div>
                   </div>
 
-                  <div className="flex flex-wrap gap-2 text-xs font-mono">
+                  <div className="flex flex-wrap gap-2 text-xs font-mono mb-8">
+                    <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-full">React JS</span>
                     <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-full">TailwindCSS</span>
-                    <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-full">React 19</span>
-                    <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Python Fast-API</span>
-                    <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-full">MongoDB</span>
+                    <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Stripe Security</span>
+                    <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-full">QR Engine</span>
+                  </div>
+
+                  <div>
+                    <a 
+                      href="https://amtf-connect.vercel.app/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-mint/10 border border-mint/30 hover:border-mint hover:bg-mint/20 text-mint rounded-full font-semibold text-xs transition-all duration-300 shadow-[0_0_15px_rgba(0,230,153,0.05)] hover:shadow-[0_0_20px_rgba(0,230,153,0.15)]"
+                    >
+                      <Globe className="w-3.5 h-3.5" /> Visiter le Pilote Actif (amtf-connect) <ArrowRight className="w-3 h-3" />
+                    </a>
                   </div>
                 </div>
                 <div className="relative group rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                   {/* Mock Screenshot representation */}
                   <div className="bg-slate-900 aspect-video flex flex-col p-4 font-mono text-[10px] text-alabaster/60 select-none">
                     <div className="flex justify-between items-center border-b border-white/10 pb-2 mb-3">
-                      <span className="text-white font-bold tracking-wide">AMTF Connect // Gestion des Membres</span>
-                      <span className="text-goldSable font-bold">• SECURE</span>
+                      <span className="text-white font-bold tracking-wide">AMTF Connect // Espace de Solidarité</span>
+                      <span className="text-mint font-bold">• CONNECTÉ (LIVE)</span>
+                    </div>
+                    <div className="grid grid-cols-3 gap-2 mb-3">
+                      <div className="bg-slate-800/80 p-2.5 rounded border border-white/5">
+                        <span className="block text-[8px] text-alabaster/40">ZONES D'IMPACT</span>
+                        <span className="text-[9px] text-white font-bold">Guinée (Tangué, Fouta)</span>
+                      </div>
+                      <div className="bg-slate-800/80 p-2.5 rounded border border-white/5">
+                        <span className="block text-[8px] text-alabaster/40">FONCTIONNALITÉS</span>
+                        <span className="text-[9px] text-white font-bold">Adhésions, Dons, QR</span>
+                      </div>
+                      <div className="bg-slate-800/80 p-2.5 rounded border border-white/5">
+                        <span className="block text-[8px] text-alabaster/40">FONDATION</span>
+                        <span className="text-[9px] text-mint font-bold">Depuis 1991</span>
+                      </div>
                     </div>
                     <div className="flex-1 bg-black/40 rounded p-3 border border-white/5 flex flex-col justify-between">
-                      <span className="text-white font-semibold block mb-2">&gt; Justificatifs professionnels à instruire :</span>
-                      <div className="space-y-2">
-                        <div className="flex justify-between items-center bg-white/5 p-1.5 rounded">
-                          <span>Dr. Fatou Diop (Médecin - Dakar)</span>
-                          <span className="px-2 py-0.5 rounded bg-mint/10 text-mint text-[8px] font-bold">VÉRIFIÉ</span>
+                      <span className="text-white font-semibold block mb-2">&gt; Chantiers Solidaires de l'AMTF :</span>
+                      <div className="space-y-1.5">
+                        <div className="flex justify-between text-[8px] text-white/50">
+                          <span>• Massif du Tangué : Infrastructures scolaires et médicales</span>
+                          <span className="text-mint font-bold">ACTIF</span>
                         </div>
-                        <div className="flex justify-between items-center bg-white/5 p-1.5 rounded">
-                          <span>Dr. Jean-Marc Leduc (Pédiatre - Lyon)</span>
-                          <span className="px-2 py-0.5 rounded bg-mint/10 text-mint text-[8px] font-bold">VÉRIFIÉ</span>
+                        <div className="flex justify-between text-[8px] text-white/50">
+                          <span>• Région du Fouta : Projets agricoles et accès eau potable</span>
+                          <span className="text-mint font-bold">ACTIF</span>
                         </div>
                       </div>
                       <div className="text-[9px] text-alabaster/40 mt-2 font-mono">
-                        Statut global du registre : Mis à jour il y a 3 min.
+                        Registre d'adhésion : Sécurisé par chiffrement sémantique
                       </div>
                     </div>
                   </div>
