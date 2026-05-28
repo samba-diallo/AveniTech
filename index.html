@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr" class="bg-obsidian scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>AveniTech — Solutions Technologiques, Numériques & IA Souveraine</title>
+    <meta name="description" content="AveniTech conçoit des plateformes numériques intelligentes pour les organisations à impact, ONG et institutions publiques. Solutions IA sécurisées, souveraines et conformes RGPD." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AveniTech — Solutions Technologiques, Numériques & IA Souveraine" />
+    <meta property="og:description" content="AveniTech conçoit des plateformes numériques intelligentes pour les organisations à impact et institutions. Solutions IA conformes et sécurisées." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-obsidian text-alabaster min-h-screen overflow-x-hidden selection:bg-mint selection:text-obsidian antialiased">
+    <!-- SVG Noise Filter Overlay -->
+    <svg class="pointer-events-none fixed inset-0 z-50 h-full w-full opacity-[0.03] select-none" xmlns="http://www.w3.org/2000/svg">
+      <filter id="noise-filter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" />
+      </filter>
+      <rect width="100%" height="100%" filter="url(#noise-filter)" />
+    </svg>
+
+    <div id="root" class="relative z-10 w-full min-h-screen flex flex-col"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
