@@ -1339,33 +1339,33 @@ export default function App() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white text-xs uppercase tracking-wider mb-4 font-mono">// EXCELLENCE</h4>
+            <h4 className="font-semibold text-white text-xs uppercase tracking-wider mb-4 font-mono">// EXPERTISES</h4>
             <ul className="space-y-2.5 text-xs text-alabaster/50 font-light">
               <li><a href="#process" className="hover:text-mint transition-colors">Notre Procédé</a></li>
-              <li><a href="#expertises" className="hover:text-mint transition-colors">Plateforme Documentaire IA</a></li>
-              <li><a href="#commitments" className="hover:text-mint transition-colors">Contrôle & Sécurité</a></li>
-              <li><a href="#showcase" className="hover:text-mint transition-colors">Récit Pilote MSF</a></li>
+              <li><a href="#expertises" className="hover:text-mint transition-colors">Traitement Documentaire IA</a></li>
+              <li><a href="#commitments" className="hover:text-mint transition-colors">Sécurité & Souveraineté</a></li>
+              <li><a href="#showcase" className="hover:text-mint transition-colors">Études de Cas (MSF & AMTF)</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-white text-xs uppercase tracking-wider mb-4 font-mono">// JURIDIQUE & PAYS</h4>
+            <h4 className="font-semibold text-white text-xs uppercase tracking-wider mb-4 font-mono">// ANCRAGE & VISION</h4>
             <ul className="space-y-2.5 text-xs text-alabaster/50 font-light">
-              <li>AveniTech Enterprise</li>
-              <li>Dakar, Sénégal</li>
-              <li>Zone UMOA / Espace OHADA</li>
-              <li>Responsable : Gérant Associé</li>
+              <li className="text-white font-medium">AveniTech Enterprise</li>
+              <li>Dakar, Sénégal (Hub R&D)</li>
+              <li>Diaspora & Espace Francophone</li>
+              <li>Hébergement Souverain Cloud</li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-white text-xs uppercase tracking-wider mb-4 font-mono">// RÉSEAUX COLLECTIF</h4>
+            <h4 className="font-semibold text-white text-xs uppercase tracking-wider mb-4 font-mono">// CONTACT & PARTENARIATS</h4>
             <div className="space-y-3.5">
               <div className="flex items-center gap-2 text-xs text-alabaster/50">
                 <Mail className="w-4 h-4 text-mint" /> contact@avenitech.sn
               </div>
               <div className="flex items-center gap-2 text-xs text-alabaster/50">
-                <Globe className="w-4 h-4 text-mint" /> Dakar, Sénégal (Diaspora)
+                <Globe className="w-4 h-4 text-mint" /> www.avenitech.sn
               </div>
             </div>
           </div>
