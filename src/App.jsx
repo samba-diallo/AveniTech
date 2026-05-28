@@ -6,6 +6,7 @@ import {
   Compass, Award, Briefcase, FileCheck, Check, Sparkles
 } from 'lucide-react';
 import { gsap } from 'gsap';
+import logoImage from './assets/logo.png';
 
 // Configuration Multi-Projet du Portail Démo Sécurisé
 const TENANTS = {
@@ -343,8 +344,8 @@ export default function App() {
       <header className="sticky top-6 z-40 w-full px-6 flex justify-center">
         <nav className="w-full max-w-5xl glass-panel rounded-full px-6 py-4 flex items-center justify-between border border-white/10 shadow-2xl transition-all duration-300">
           <div className="flex items-center gap-3">
-            <span className="font-bold text-xl tracking-tight text-white flex items-center gap-2">
-              <Cpu className="text-mint w-6 h-6 animate-pulse" />
+            <span className="font-bold text-xl tracking-tight text-white flex items-center gap-2.5 select-none">
+              <img src={logoImage} className="w-8 h-8 rounded-lg border border-mint/20 shadow-[0_0_12px_rgba(0,230,153,0.2)] object-cover" alt="AveniTech Logo" />
               Aveni<span className="text-mint">Tech</span>
               <span className="text-[10px] text-goldSable border border-goldSable/30 px-1.5 py-0.5 rounded tracking-widest font-mono font-medium">ENTERPRISE</span>
             </span>
@@ -1323,8 +1324,9 @@ export default function App() {
       <footer className="w-full border-t border-white/5 bg-black/60 py-12 relative z-10">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-sm">
           <div className="space-y-4">
-            <span className="font-bold text-lg text-white flex items-center gap-2">
-              <Cpu className="text-mint w-5 h-5" /> Aveni<span className="text-mint">Tech</span>
+            <span className="font-bold text-lg text-white flex items-center gap-2.5 select-none">
+              <img src={logoImage} className="w-6 h-6 rounded-md border border-mint/20 shadow-[0_0_8px_rgba(0,230,153,0.15)] object-cover" alt="AveniTech Logo" />
+              Aveni<span className="text-mint">Tech</span>
             </span>
             <p className="text-xs text-alabaster/40 leading-relaxed font-light">
               Solutions IA sécurisées, souveraines et conformes, dédiées aux institutions internationales et organisations à impact.
